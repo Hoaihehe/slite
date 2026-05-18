@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giao diện Dark Mode</title>
+  <title>Mode</title>
   
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <h2>HTML DOM Demo</h2>
-  <p>Nhấn vào nút bên dưới để trải nghiệm!</p>
+  <p>CLICK!</p>
 
-  <button onclick="changeTheme()" id="themeBtn">Bật Dark Mode</button>
+  <button onclick="changeTheme()" id="themeBtn"> Dark Mode</button>
 
   <script>
     function changeTheme() {
@@ -22,9 +22,9 @@
       bodyTag.classList.toggle("dark-mode");
 
       if (bodyTag.classList.contains("dark-mode")) {
-        btn.innerHTML = "Tắt Dark Mode";
+        btn.innerHTML = "Light Mode";
       } else {
-        btn.innerHTML = "Bật Dark Mode";
+        btn.innerHTML = "Dark Mode";
       }
     }
   </script>
