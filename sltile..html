@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body id="myBody" style="background-color: white; color: black; transition: 0.5s;">
+
+  <h2>HTML DOM Demo</h2>
+  <p>Click the button to change the theme!</p>
+
+  <button onclick="changeTheme()">Toggle Dark Mode</button>
+
+  <script>
+    function changeTheme() {
+      var bodyTag = document.getElementById("myBody");
+      // Dùng DOM để kiểm tra và đổi màu
+      if (bodyTag.style.backgroundColor === "white") {
+        bodyTag.style.backgroundColor = "black";
+        bodyTag.style.color = "white";
+      } else {
+        bodyTag.style.backgroundColor = "white";
+        bodyTag.style.color = "black";
+      }
+    }
+  </script>
+
+</body>
+</html>
