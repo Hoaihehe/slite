@@ -1,0 +1,75 @@
+/* Reset cơ bản và cài đặt font chữ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Căn giữa toàn bộ màn hình */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f2f5; 
+  color: #1c1e21;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Giao diện Dark Mode */
+body.dark-mode {
+  background-color: #18191a; 
+  color: #e4e6eb;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #606770;
+  margin-bottom: 24px;
+  transition: color 0.4s ease;
+}
+
+body.dark-mode p {
+  color: #b0b3b8;
+}
+
+/* Nút bấm */
+button {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0084ff; 
+  border: none;
+  border-radius: 8px; 
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 132, 255, 0.3); 
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0073e6;
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 16px rgba(0, 132, 255, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+body.dark-mode button {
+  background-color: #3a3b3c;
+  color: #e4e6eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode button:hover {
+  background-color: #4e4f50;
+}
